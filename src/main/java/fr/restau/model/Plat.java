@@ -1,7 +1,7 @@
 package fr.restau.model;
 
 public class Plat {
-    private !ong id;
+    private long id;
     private String nom;
     private String description;
     private double prix;
