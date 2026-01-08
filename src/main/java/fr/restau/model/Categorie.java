@@ -1,19 +1,22 @@
 package fr.restau.model;
 
 public class Categorie {
-    private String id;
-    private String date;
-
+    private long id;
+    private String nom;
+    private String iconeUrl;
     public Categorie() {}
 
-    public Categorie(String id, String date) {
+    public Categorie(long id, String nom, String iconeUrl) {
         this.id = id;
-        this.date = date;
+        this.nom = nom;
+        this.iconeUrl = iconeUrl;
     }
 
     // Getters et Setters
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
-    public String getDate() { return date; }
-    public void setDate(String date) { this.date = date; }
+    public long getId() { return id; }
+    public void setId(long id) { this.id = id; }
+    public String getNom() { return nom; }
+    public void setNom(String nom) { this.nom = nom; }
+    public String getIconeUrl() { return iconeUrl; }
+    public void setIconeUrl(String iconeUrl) { this.iconeUrl = iconeUrl; }
 }
