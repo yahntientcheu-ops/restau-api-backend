@@ -9,14 +9,15 @@ public class Commande {
     private long id;
     private String identifiantClient;
     private Date date;
-    private List<LigneCommande> lignes = new ArrayList<>();
     private double prixTotal;
-
+    private List<LigneCommande> lignes = new ArrayList<>();
+    
     // --- CONSTRUCTEURS ---
-    public Commande() {
-        this.date = new Date();
-    }
-
+   public Commande(long id, String identifiantClient) {
+    this.id = id;
+    this.identifiantClient = identifiantClient;
+    this.date = new Date();
+}
     // --- LOGIQUE MÉTIER ---
     public void calculerTotal() {
         prixTotal = 0;
